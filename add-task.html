@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <title>Create a task</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="style/style.css">
+</head>
+<body>
+
+    <span class="complete">Task was successfully added</span>
+    <h2>Create a task</h2>
+    <section>
+        <div class="task-form">
+            <form name="add-task-form" novalidate>
+                <div>
+                    <label>Task title</label>
+                    <textarea name="title" type="text" placeholder="Add a task title" minlength="1" maxlength="20" required></textarea>
+                    <span class="incorrect"></span>
+                </div>
+                <div class="task">
+                    <label>Task description</label>
+                    <textarea name="description" type="text" placeholder="Add a task description" wrap="soft"></textarea>
+                </div>
+                <div class="date">
+                    <label>Task due date</label>
+                    <input name="date" type="datetime-local" id="userdate" required>
+                    <span class="incorrect"></span>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Add a task">
+                </div>
+            </form>
+        </div>>
+    </section>
+
+<script src="js/add-task.js"></script>   
+</body>
+</html>
